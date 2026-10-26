@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background: linear-gradient(to bottom, rgba(0, 153, 255, 0.78) 5%, rgba(242, 186, 130, 0.54) 95%)
+}
+.banner{
+    border-radius: 20px;
+    width: 100%;    
+    display: block;
+    margin: auto; 
+}
+
+.breakdown{  /* This is for the break down line on the text */
+     color: #7FFFD4;
+    background: rgba(162, 224, 239, 0);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.icon{
+    opacity: 0%;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* Style the top navigation bar */
+
+.topnav {
+/* For functionality */
+    
+top: 0;
+position: sticky;
+margin: auto;
+width: 100%;
+overflow: hidden;
+z-index: 99; 
+    
+/* For decoration */ 
+background: rgba(25, 211, 255, 0.1);
+box-shadow: 0 4px 30px rgba(149, 214, 255, 0.87);
+border: 1px solid rgba(255, 255, 255, 0.38);
+-webkit-backdrop-filter: blur(0.08px);
+backdrop-filter: blur(1.6px);    
+border-radius: 16px;   
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255); 
+  text-shadow: 0 0 20px rgba(191, 248, 255, 0.58), 0 0 20px rgba(205, 245, 255, 0.83);
+  text-decoration: none;
+
+  text-align: center;
+  padding: 25px 28px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+ color:aqua;
+ opacity: 90%;
+}
+
+.tickets{
+    float: right;
+    background: rgba(253, 30, 74, 0.87);
+    -webkit-backdrop-filter: blur(0.02px);
+backdrop-filter: blur(0.9px);    
+}
+
+.tick{
+    float: right;
+    
+}
+
+.poster{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    display: block;
+}
+
+
+.fakeimg{
+    display: block;
+    margin: auto;
+    
+}
+
+.intab{
+    font-family: "Lilita One", sans-serif;
+    color: rgba(247, 165, 165, 0.9);
+}
+
+
+
+.terms{
+    color: blue;
+    
+}
+.map{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.38);  
+    border-radius: 16px;  
+    margin: auto;
+}
+
+.card{
+    box-shadow: 0 4px 30px rgba(149, 214, 255, 0.29);
+    width: auto;
+    height: auto;
+}
+
+.title{
+    font-family: kalam;
+    color: #7FFFD4;
+    background: rgba(162, 224, 239, 0);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.txt {
+    font-family: "Lilita One", sans-serif;
+    color: rgba(252, 243, 225, 0.89);
+  float: right;
+    width: 48.8%;
+  display: block;
+    font-size: 1.8vw;
+    text-align: center;
+    
+}
+
+.txt2 {
+    font-family: "Lilita One", sans-serif;
+    color: rgba(252, 243, 225, 0.89);
+  float: right;
+    width: 48.8%;
+  display: block;
+    font-size: 1.8vw;
+    text-align: center;
+    
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  margin-left: 100px;
+  width: 85%;
+}
+
+
+/* The place holder in the body */
+.card {
+    background: rgba(162, 224, 239, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    
+  padding: 20px;
+  margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+    box-shadow: 0 4px 30px rgba(242, 228, 201, 0.46);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    background: linear-gradient(to bottom, rgba(255, 255, 204, 0.2) 0%, rgba(255, 204, 153, 0.37) 100%);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.flogo{
+    overflow: auto;
+    width: 05%;
+    position: relative;
+    left: 40%;
+}
+
+
+
+
+
+
+
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background: rgba(162, 224, 239, 0.29);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 20px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: rgba(181, 241, 255, 0.89);
+}
+
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid rgba(156, 255, 255, 0.63);
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: rgba(214, 214, 214, 0.31);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .poster, .txt {   
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    opacity: 100%;
+    float: right;
+    display: block;
+    pointer-events:stroke;
+    cursor: default;
+  }
+
+  
+    .tickets a:hover {
+ background: rgba(3, 14, 39, 0.69);
+}
+    .tick{
+        pointer-events: none;
+        cursor: not-allowed;
+        position: none;
+        float: inherit;
+        opacity: 0%;
+    }    
+    
+.topnav {
+/* For functionality */
+    
+top: 0;
+position: sticky;
+margin: auto;
+width: 100%;
+overflow: hidden;
+z-index: 99; 
+    
+/* For decoration */ 
+box-shadow: 0 4px 30px rgba(149, 214, 255, 0.87);
+border: 1px solid rgba(255, 255, 255, 0.38);
+-webkit-backdrop-filter: blur(0.08px);
+backdrop-filter: blur(2.9px);    
+border-radius: 16px;   
+}    
+    
+
+  
+    
+    
+.topnav {
+  animation: topnav 6s forwards;
+}
+
+@keyframes topnav {
+    
+from  { background: rgba(25, 211, 255, 0.1);} 
+    
+ to {background: rgba(82, 148, 190, 0.42);}
+    
+} 
+   
+  
+.title{
+    font-family: kalam;
+    color: #7FFFD4;
+    background: rgba(162, 224, 239, 0);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 6vw;
+}  
+  
+  
+ .txt {
+    font-family: "Lilita One", sans-serif;
+    color: rgba(252, 243, 225, 0.89);
+  float: right;
+
+  display: block;
+    font-size: 4vw 
+}   
+    
+   
+ .txt2 {
+    font-family: "Lilita One", sans-serif;
+    color: rgba(252, 243, 225, 0.89);
+  float: none;
+    width: 100%;
+  display: block;
+    font-size: 4vw;
+    text-align: center;
+    
+}   
+  
+
+  
+  
+    
+    
+    
+}
+    
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: sticky;}
+    
+    
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    
+  .topnav.responsive a {
+    float: none;
+    display: block;  
+  } 
+    
+.topnav.responsive .tick{
+    float: none;
+    opacity: 100%;
+    pointer-events: auto;
+    cursor: allowed;
+}
+     
+    
+}
+
+
+/* ===== Shoreline scene: fixed behind the whole page ===== */
+.hero-space{            /* leaves the title visible when the page loads */
+    height: max(46vh, 280px);
+}
+.hero{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+.hero canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* ===== Page transition (splash wipe) ===== */
+/* covers the new page until the wipe animation takes over */
+html.wiping::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9998;
+    background: linear-gradient(to bottom, #46c8ef, #2f9ae8 50%, #1d6cc4);
+    animation: wipeFailsafe 0.4s 3s forwards;   /* safety: never gets stuck if something fails */
+}
+@keyframes wipeFailsafe{
+    to{ opacity: 0; visibility: hidden; }
+}
+
+/* phones: the title sits right above the nav bar */
+@media screen and (max-width: 800px) {
+  .hero-space{
+    height: max(24vh, 180px);
+  }
+}
